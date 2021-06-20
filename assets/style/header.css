@@ -1,0 +1,53 @@
+:root{
+
+    --primary: hsl(180, 66%, 46%);
+    --primary-active:hsl(180, 78%, 56%);
+    --secondary: hsl(257, 27%, 26%);
+    --error: hsl(0, 87%, 67%);
+
+    --neutral: #fff;
+    --bg-light: hsl(0, 0%, 75%);
+    --bg-dark: hsl(260, 8%, 14%);
+    --bg-transparent: rgba(0,0,0,0.5);
+
+    --txt-light: hsl(257, 7%, 63%);
+    --txt-dark: #35323e;
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--txt-dark);
+}
+
+.nav-bar, .menu, .account{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu{
+    gap: 5px;
+    
+}
+.menu a, .button{
+    transition: 300ms;
+}
+.menu a:hover{
+    color: var(--txt-dark);
+}
+.button:hover{
+    background-color: var(--secondary);
+    color: var(--neutral);
+}
+.cyan-btn:hover{
+    background-color: var(--primary-active);
+}
+
+

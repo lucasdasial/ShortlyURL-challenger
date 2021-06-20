@@ -1,0 +1,89 @@
+:root{
+
+    --primary: hsl(180, 66%, 46%);
+    --primary-active:hsl(180, 78%, 56%);
+    --secondary: hsl(257, 27%, 26%);
+    --error: hsl(0, 87%, 67%);
+
+    --neutral: #fff;
+    --bg-light: hsl(0, 0%, 75%);
+    --bg-dark: hsl(260, 8%, 14%);
+    --bg-transparent: rgba(0,0,0,0.1);
+
+    --txt-light: hsl(257, 7%, 63%);
+    --txt-dark: hsl(255, 11%, 22%);
+}
+
+html,body,h1,h2,h3,h4,ul,li,a,button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--txt-light);
+
+    scroll-behavior: smooth;
+}
+a{
+    display: block;
+    padding: 0.5rem;
+    
+}
+a, button{
+    cursor: pointer;
+}
+
+.header{
+    width: 100vw;
+    height: auto;
+    
+}
+
+.container{
+    max-width: 900px;
+    
+    margin: auto;
+    padding:10px 30px;
+
+    display: flex;
+    align-items: center;
+
+    /* background-color: bisque; */
+    
+}
+
+.button{
+    width: 80px;
+    height: 40px;
+    background: var(--neutral);
+    border-radius: 20px;
+}
+
+.cyan-btn{
+    background-color: var(--primary);
+    color: var(--neutral);
+}
+
+.btn-dark-mode, .btn-menu-mobile{
+    background-color: transparent;
+    font-size: 30px;
+    color: var(--secondary);
+
+    display: block;
+    margin:  0 5px;
+    padding: 0.5rem;
+
+    
+
+}
+
+.btn-menu-mobile{
+    display: none;
+   
+}
+

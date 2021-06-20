@@ -1,0 +1,54 @@
+:root{
+    --primary: hsl(180, 66%, 46%);
+    --primary-active:hsl(180, 78%, 56%);
+    --secondary: hsl(257, 27%, 26%);
+    --error: hsl(0, 87%, 67%);
+
+    --neutral: #fff;
+    --bg-light: hsl(0, 0%, 75%);
+    --bg-dark: hsl(260, 8%, 14%);
+    --bg-transparent: rgba(0,0,0,0.5);
+
+    --txt-light: hsl(257, 7%, 63%);
+    --txt-dark: #35323e;
+}
+
+@media (max-width:720px){
+    .btn-menu-mobile{
+        display: block;
+    }
+    .menu{
+        display: block; 
+        overflow-y: hidden;
+        position: absolute;
+        width: 250px;
+        height: 0px;
+        top:90px;
+        right:10px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: var(--secondary);
+        z-index: 1000;
+        transition: 600ms;
+        visibility: hidden;
+        
+    }
+
+    #nav.ativo .menu{
+        visibility: visible;
+        height: 280px;
+    }
+    .menu li{
+        text-align: center;   
+    }
+    .button{
+        width: 150px;
+    }
+   .menu a:hover{
+       color:var(--neutral)
+   }
+   .button:hover{
+       background-color: var(--bg-transparent);
+       color: var(--neutral);
+   }
+}   
