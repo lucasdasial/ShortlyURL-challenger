@@ -69,12 +69,15 @@
 
       <section class="container url-section" id="start-target">
         <div class="url-box">
-          <input type="search" id="url-user" placeholder="Shorten link here!" />
+          <input type="search" required id="url-user" placeholder="Shorten link here!" />
 
           <button class="shorten-btn cyan-btn">Shoten it!</button>
         </div>
 
-        <div class="url-shortened-box">A URL encurtada aparecera aqui!</div>
+        <div class="url-shortened-box">
+          <div id="short_link">Sua URL encurtada!</div>
+          <button id="btn-short-url"><i class="far fa-copy"></i></button>
+        </div>
       </section>
       <section class="booster">
         <h2>Leal sistemas is best!</h2>
@@ -124,4 +127,5 @@
   ></script>
 
   <script src="./javascript/btn-mobile.js"></script>
+  <script src="./javascript/main.js"></script>
 </html>

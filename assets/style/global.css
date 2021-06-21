@@ -69,10 +69,19 @@ a, button{
     background-color: var(--primary);
     color: var(--neutral);
 }
+.cyan-btn:hover{
+    background-color: var(--primary-active);
+}
 .shorten-btn{
     width: 120px;
     height: 40px;
     border-radius: 7px;
+}
+.shorten-btn:active{
+    background-color: var(--primary);
+}
+.url-shortened-box button:active{
+    background-color: var(--primary-active);
 }
 
 .btn-menu-mobile{
