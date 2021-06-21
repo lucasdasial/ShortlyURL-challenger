@@ -13,9 +13,9 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="./assets/style/global.css" />
     <link rel="stylesheet" href="./assets/style/header.css" />
     <link rel="stylesheet" href="./assets/style/main.css" />
-    <link rel="stylesheet" href="./assets/style/global.css" />
     <link rel="stylesheet" href="./assets/style/mobile.css" />
   </head>
   <body>
@@ -24,12 +24,12 @@
         <nav id="nav" class="nav-bar">
           <a href="#" class="logo">Shortly</a>
           <ul class="menu">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pircings</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="https://www.lealsistemas.com/" target="blank">Leal Site</a></li>
+            <li><a href="#start-target">Shoten link</a></li>
+            <li><a href="#footer">Footer</a></li>
             <li>
               <a href="#">
-                <button class="button btn-login">Login</button>
+                <button class="button cyan-btn btn-login">Login</button>
               </a>
             </li>
             <li>
@@ -39,15 +39,84 @@
             </li>
           </ul>
 
-          
-            
-            <button class="btn-menu-mobile">
-              <i class="fas fa-bars"></i>
-            </button>
-          
+          <button class="btn-menu-mobile">
+            <i class="fas fa-bars"></i>
+          </button>
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="container hero">
+        <div class="img-box">
+          <img
+            class="bg-img"
+            src="./assets/images/illustration-working.svg"
+            alt="ilustração de uma pessoa trabalhando no laptop"
+          />
+        </div>
+        <div class="txt-box">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+        </div>
+        <a href="#start-target">
+          <button class="button cyan-btn get-btn">Get Start</button>
+        </a>
+      </section>
+
+      <section class="container url-section" id="start-target">
+        <div class="url-box">
+          <input type="search" id="url-user" placeholder="Shorten link here!" />
+
+          <button class="shorten-btn cyan-btn">Shoten it!</button>
+        </div>
+
+        <div class="url-shortened-box">A URL encurtada aparecera aqui!</div>
+      </section>
+      <section class="booster">
+        <h2>Leal sistemas is best!</h2>
+      </section>
+
+      <footer >
+        <a href="https://github.com/luccasalves" target="blank" class="lucas">Desafio completado por lucas alves</a>
+        <section class="container " id="footer">
+          <a href="#"><h1> Ir para cima ⬆️</h1></a>
+          <ul>
+            <li class="l1">Leal sistemas</li>
+            <li>Leal sistemas</li>
+            <li>Leal sistemas</li>
+            <li>Leal sistemas</li>
+          </ul>
+          <ul>
+            <li class="l1">about us</li>
+            <li>about us</li>
+            <li>about us</li>
+            <li>about us </li>
+          </ul>
+          <ul>
+            <li class="l1">Leal sistemas</li>
+            <li>Leal sistemas</li>
+            <li>Leal sistemas</li>
+            <li>Leal sistemas</li>
+          </ul>
+          <div class="social-medias">
+
+            <a href="https://www.facebook.com/" target="balnk">
+              <img src="./assets/images/icon-facebook.svg" alt="logo facebook" />
+            </a>
+            <a href="https://www.instagram.com/sistemasleal/" target="balnk">
+              <img src="./assets/images/icon-instagram.svg" alt="logo facebook" />
+            </a>
+            <a href="https://br.pinterest.com/" target="balnk">
+              <img src="./assets/images/icon-pinterest.svg" alt="logo facebook" />
+            </a>
+          </div>
+        </section>
+      </footer>
+    </main>
   </body>
   <script
     src="https://kit.fontawesome.com/ffccd35372.js"

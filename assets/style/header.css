@@ -6,7 +6,7 @@
     --error: hsl(0, 87%, 67%);
 
     --neutral: #fff;
-    --bg-light: hsl(0, 0%, 75%);
+    --bg-light: #ededed;
     --bg-dark: hsl(260, 8%, 14%);
     --bg-transparent: rgba(0,0,0,0.5);
 
@@ -14,11 +14,13 @@
     --txt-dark: #35323e;
 }
 
-
+.header{
+    background-color: var(--secondary);
+}
 .logo{
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--txt-dark);
+    color: var(--neutral);
 }
 
 .nav-bar, .menu, .account{
@@ -40,12 +42,9 @@
     transition: 300ms;
 }
 .menu a:hover{
-    color: var(--txt-dark);
-}
-.button:hover{
-    background-color: var(--secondary);
     color: var(--neutral);
 }
+
 .cyan-btn:hover{
     background-color: var(--primary-active);
 }

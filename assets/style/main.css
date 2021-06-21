@@ -1,0 +1,148 @@
+:root{
+
+    --primary: hsl(180, 66%, 46%);
+    --primary-active:hsl(180, 78%, 56%);
+    --secondary: hsl(257, 27%, 26%);
+    --error: hsl(0, 87%, 67%);
+
+    --neutral: #fff;
+    --bg-light: hsl(0, 0%, 89%);
+    --bg-dark: hsl(260, 8%, 14%);
+    --bg-transparent: rgba(0,0,0,0.1);
+
+    --txt-light: hsl(257, 7%, 63%);
+    --txt-dark: hsl(255, 11%, 22%);
+}
+.hero{
+    background-color: var(--neutral);
+}
+
+.hero, .url-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero .bg-img{
+    width: 320px;
+}
+
+.hero .txt-box{
+    text-align: center;
+    width: 320px;
+}
+
+.hero .txt-box h1{
+    color: var(--txt-dark);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.url-section{
+    margin: 0 auto  ;
+    padding: 0;
+}
+
+.url-box{
+    width: 100%;
+    min-height: 150px;
+    margin: 100px auto 10px;
+    padding: 0 30px;
+    border-radius: 7px;
+    background-color: var(--secondary);
+    background-image: url(../images/bg-boost-desktop.svg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#url-user{
+    width: 90%;
+    height: 40px;
+    margin-right:10px ;
+    padding-left:10px ;
+    border-radius: 7px;
+
+    font-size: 18px;
+    font-weight: 700px;
+    color: var(--txt-dark);
+}
+
+.url-shortened-box{
+    background-color: var(--neutral);
+    width: 100%;
+    height: 60px;
+    margin: 10px 0 5px 0;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.booster{
+    width: 100%;
+    height: 120px;
+    background-color: var(--secondary);
+    background-image: url(../images/bg-shorten-desktop.svg);
+    margin-top: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.booster h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral);
+}
+
+footer{
+    height: auto;
+    padding-top: 30px;
+    background-color:var(--bg-dark) ;
+    text-align: center;
+}
+
+footer {
+    width: auto;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#footer h1, .l1{
+    color: var(--neutral);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 10px 20px;
+
+    cursor: pointer;
+}
+#footer li{
+    margin: 10px;
+    cursor: pointer;
+}
+.lucas:hover{
+    color: var(--primary);
+}
+#footer li:hover{
+    color: var(--primary);
+}
+
+.social-medias{
+    width: 200px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+.social-medias img{
+    color: var(--primary);
+}
+

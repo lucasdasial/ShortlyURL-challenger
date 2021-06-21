@@ -5,7 +5,7 @@
     --error: hsl(0, 87%, 67%);
 
     --neutral: #fff;
-    --bg-light: hsl(0, 0%, 75%);
+    --bg-light: hsl(0, 0%, 87%);
     --bg-dark: hsl(260, 8%, 14%);
     --bg-transparent: rgba(0,0,0,0.5);
 
@@ -13,19 +13,82 @@
     --txt-dark: #35323e;
 }
 
-@media (max-width:720px){
+@media(max-width:920px){
+    .container{
+        padding: 0 35px;
+    }
+    #footer{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .social-medias{
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+    #footer h1{
+        font-size: 1.rem;
+        margin: 10px 0;
+    }
+
+    .hero .get-btn{
+        width: 300px;
+    }
+}
+@media(min-width:800px){
+    .img-box{
+        display: none;
+    }
+
+    .hero{
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        align-items:flex-start;
+    
+        
+        background-image: url(../images/illustration-working.svg);
+        background-repeat: no-repeat;
+        background-position:right ;
+        background-size: 50%;
+    }
+
+    .hero .txt-box{
+        width: 550px;
+       
+    }
+    .hero .txt-box h1{
+        font-size: 3.5rem;
+    }
+    .hero .txt-box p{
+        font-size: 1rem;
+        width: 500px;
+    }
+    .hero .get-btn{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media (max-width:760px){
+    
     .btn-menu-mobile{
         display: block;
     }
+
     .menu{
         display: block; 
         overflow-y: hidden;
         position: absolute;
         width: 250px;
         height: 0px;
-        top:90px;
+        top:65px;
         right:10px;
         padding: 5px;
+        margin: 0 5px;
         border-radius: 20px;
         background-color: var(--secondary);
         z-index: 1000;
@@ -48,7 +111,28 @@
        color:var(--neutral)
    }
    .button:hover{
-       background-color: var(--bg-transparent);
+       
        color: var(--neutral);
    }
+
+   
+   
 }   
+
+@media(max-width:500px){
+    .url-box{
+        flex-wrap: wrap;
+        padding: 5px;
+        background-image: url(../images/bg-boost-mobile.svg);
+    }
+   
+    .shorten-btn, #url-user{
+        margin: 0;
+        width: 100%;
+    }
+    .hero .get-btn{
+        width: 200px;
+        
+    }
+    
+}

@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 :root{
 
     --primary: hsl(180, 66%, 46%);
@@ -29,6 +34,10 @@ html,body,h1,h2,h3,h4,ul,li,a,button{
 
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+    background-color: var(--bg-light);
+}
 a{
     display: block;
     padding: 0.5rem;
@@ -40,25 +49,17 @@ a, button{
 
 .header{
     width: 100vw;
-    height: auto;
-    
+    height: auto; 
 }
 
 .container{
-    max-width: 900px;
-    
+    max-width: 1240px;
     margin: auto;
     padding:10px 30px;
-
-    display: flex;
-    align-items: center;
-
-    /* background-color: bisque; */
-    
 }
 
 .button{
-    width: 80px;
+    width: 100px;
     height: 40px;
     background: var(--neutral);
     border-radius: 20px;
@@ -68,18 +69,20 @@ a, button{
     background-color: var(--primary);
     color: var(--neutral);
 }
+.shorten-btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+}
 
-.btn-dark-mode, .btn-menu-mobile{
+.btn-menu-mobile{
     background-color: transparent;
     font-size: 30px;
-    color: var(--secondary);
+    color: var(--txt-light);
 
     display: block;
     margin:  0 5px;
     padding: 0.5rem;
-
-    
-
 }
 
 .btn-menu-mobile{
