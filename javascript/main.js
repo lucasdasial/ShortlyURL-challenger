@@ -14,15 +14,21 @@ $shortenBtn.addEventListener('click', () => {
       return res.json()
     })
     .then((dados) => {
-      $short_link.innerHTML = dados.result['short_link']
+      try {
+        $short_link.innerHTML = dados.result['short_link'];
+      } catch (error) {
+        console.log("Menssagem do erro: " + error.message );
+        alert("Ocorreu um error, nã foi possivel gerar sua url");
+      }
+      
       $btnCopy.addEventListener('click', () => {
         /* O método select() só funciona em inputs */
         navigator.clipboard.writeText(dados.result['short_link']).then(
           () => {
-            console.log('Copiado com sucesso')
+            alert('Link copiado com sucesso!')
           },
           () => {
-            console.log('Erro ao copiar para área de transferência')
+            alert('Erro ao copiar para área de transferência')
           }
         )
       })
